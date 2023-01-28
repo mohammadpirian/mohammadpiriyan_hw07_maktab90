@@ -5,8 +5,9 @@ let salaries = {
 };
 let list;
 list = Object.entries(salaries);
-function topsalary() {
-  console.log(list);
-  return list;
+function topsalary(a) {
+  let sortarray = a.sort((a, b) => b[1] - a[1]);
+
+  return sortarray;
 }
-console.log(list);
+console.log(topsalary(list)[0][0]);
