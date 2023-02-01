@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <h2>Student Registeration Form</h2>
+      <label for="fName">Firstname</label>
+      <input type="text" maxlength="15" id="fName" placeholder="Firstname" />
+      <label for="mName">Middlename</label>
+      <input type="text" maxlength="15" id="mName" placeholder="Middlename" />
+      <label for="lName">Lastname</label>
+      <input type="text" maxlength="15" id="lName" placeholder="Lastname" />
+
+      <div class="select">
+        <label for="course">Course:</label>
+        <select name="course" id="course">
+          <option>course</option>
+          <option>course2</option>
+          <option>course3</option>
+        </select>
+      </div>
+
+      <div class="radio">
+        <label for="radio">Gender:</label>
+        <div>
+          <input type="radio" name="Male" id="radio1" />
+          <label for="">Male</label>
+          <input type="radio" name="Female" id="radio2" />
+          <label for="">Female</label>
+          <input type="radio" name="Other" id="radio3" />
+          <label for="">Other</label>
+        </div>
+      </div>
+
+      <label for="phone">phone:</label>
+      <input
+        type="tel"
+        name="phone"
+        id="phone1"
+        value="+98"
+        minlength="9"
+        maxlength="13"
+      />
+      <input
+        type="tel"
+        minlength="9"
+        maxlength="11"
+        name="phone2"
+        id="phone2"
+        placeholder="phone no"
+      />
+
+      <div class="texts">
+        <label for="address">Current Address</label>
+        <textarea
+          name="address"
+          id="address"
+          cols="20"
+          rows="10"
+          placeholder="current address"
+        ></textarea>
+      </div>
+
+      <label
+        for="email"
+        class="email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        >Email</label
+      >
+      <input type="text" name="email" id="email" placeholder="Enter Email" />
+
+      <label for="pass" class="pass">Password</label>
+      <input
+        type="password"
+        name="pass"
+        id="pass"
+        placeholder="Enter Password"
+      />
+
+      <label for="retype" class="retype">Re-type Password</label>
+      <input
+        type="password"
+        name="retype"
+        id="retype"
+        placeholder="Retype Password"
+      />
+
+      <input type="submit" id="btn" value="Register" />
+    </form>
+  </body>
+</html>
