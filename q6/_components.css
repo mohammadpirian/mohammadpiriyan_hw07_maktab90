@@ -1,22 +1,22 @@
 body {
   font-family: sans-serif;
-  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 form {
-  width: 50%;
+  width: 40vw;
   background-color: #add8e6;
   padding: 25px;
   display: flex;
   flex-direction: column;
 }
-h2 {
+h1 {
+  font-size: x-large;
   text-align: center;
   padding-bottom: 20px;
-  border-bottom: 2px solid #d2e5ec;
+  border-bottom: 3px solid #d2e5ec;
   margin-bottom: 20px;
 }
 label {
@@ -43,34 +43,34 @@ textarea {
   margin-bottom: 15px;
   padding: 10px;
 }
-select {
-  background-color: #f1f1f1;
-  border: none;
+.addres-box {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
 }
-#btn {
+
+.btn-reg {
   background-color: green;
   color: white;
   height: 35px;
   margin-bottom: 0;
   cursor: pointer;
+  border: none;
+}
+.btn-reg:hover {
+  background-color: rebeccapurple;
 }
 .email,
 .pass,
 .retype {
   font-weight: bold;
 }
-.error {
-  position: relative;
-  bottom: 10px;
-  font-size: 13px;
-  color: red;
-  font-family: cursive;
-}
+
 .radio {
   display: flex;
   flex-direction: column;
 }
-.radio div {
+.radio-btn {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -78,9 +78,4 @@ select {
 .radio div label {
   position: relative;
   bottom: 5px;
-}
-.texts {
-  display: flex;
-  flex-direction: column;
-  height: 100px;
 }

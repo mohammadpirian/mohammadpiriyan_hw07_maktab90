@@ -9,7 +9,7 @@
   </head>
   <body>
     <form>
-      <h2>Student Registeration Form</h2>
+      <h1>Student Registeration Form</h1>
       <label for="fName">Firstname</label>
       <input type="text" maxlength="15" id="fName" placeholder="Firstname" />
       <label for="mName">Middlename</label>
@@ -28,7 +28,7 @@
 
       <div class="radio">
         <label for="radio">Gender:</label>
-        <div>
+        <div class="radio-btn">
           <input type="radio" name="Male" id="radio1" />
           <label for="">Male</label>
           <input type="radio" name="Female" id="radio2" />
@@ -56,7 +56,7 @@
         placeholder="phone no"
       />
 
-      <div class="texts">
+      <div class="addres-box">
         <label for="address">Current Address</label>
         <textarea
           name="address"
@@ -70,8 +70,9 @@
       <label
         for="email"
         class="email"
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-        >Email</label
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+      >
+        Email</label
       >
       <input type="text" name="email" id="email" placeholder="Enter Email" />
 
@@ -91,7 +92,7 @@
         placeholder="Retype Password"
       />
 
-      <input type="submit" id="btn" value="Register" />
+      <button type="submit" id="btn" class="btn-reg">Register</button>
     </form>
   </body>
 </html>
