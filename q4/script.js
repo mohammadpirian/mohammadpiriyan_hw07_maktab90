@@ -1,13 +1,14 @@
-let map = new Map();
-map.set("name", "John");
-map.set("ali", "ahmad");
-map.set("mohtashami", "reza");
-console.log(map);
-let keys = Array.from(map.keys());
-console.log(keys);
-keys.push("more");
-// keys.set("more");
-// map.keys;
+"use strict";
+let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
 
-// let key = Array.from(map.keys());
-// console.log(key);
+function aclean(arr) {
+  let newMap = new Map();
+  for (const val of arr) {
+    let newKey = val.toLowerCase().split("").sort().join("");
+    newMap.set(newKey, val);
+  }
+
+  return Array.from(newMap.values());
+}
+
+console.log(aclean(arr));
